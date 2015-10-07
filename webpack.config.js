@@ -3,7 +3,7 @@ var path = require('path');
 var webpack = require('webpack');
 var React = require('react');
 
-var CODE = path.join(__dirname, 'excercises');
+var CODE = path.join(__dirname, 'exercises');
 
 makeIndex();
 
@@ -18,7 +18,7 @@ module.exports = {
   }, {}),
 
   output: {
-    path: 'excercises/__build__',
+    path: 'exercises/__build__',
     filename: '[name].js',
     chunkFilename: '[id].chunk.js',
     publicPath: '/__build__/'
@@ -50,7 +50,7 @@ function makeIndex () {
       )
     )
   ));
-  fs.writeFileSync('./excercises/index.html', markup);
+  fs.writeFileSync('./exercises/index.html', markup);
 }
 
 function isDirectory(dir) {
