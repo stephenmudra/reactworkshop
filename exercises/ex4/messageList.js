@@ -2,11 +2,8 @@
 var React = require('react');
 
 var messages = require('../messages.js');
-/*messages.getMessages(function (msgArray) {
-	console.log(msgArray);
-});*/
 
-module.exports = React.createClass({
+var MessageList = React.createClass({
 
 	getInitialState: function () {
 	    return {
@@ -31,14 +28,15 @@ module.exports = React.createClass({
 	},
 
 	componentWillUnmount: function () {
-
 	},
 
   	render: function() {
-    	return <div>
+    	return <div className="messageList">
     		{this.state.messages.map(function (msg) {
-    			return <div><strong>{msg.user}</strong> {msg.message}</div>;
+    			return <div key={msg.objectId}><strong>{msg.user}</strong> {msg.message}</div>;
     		})}
     	</div>;
   	}
 });
+
+module.exports = MessageList;

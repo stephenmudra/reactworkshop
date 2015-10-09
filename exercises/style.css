@@ -1,0 +1,57 @@
+
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700,300,400italic,300italic,700italic);
+
+body {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.userList {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    bottom: 0;
+    padding: 10px;
+    color: #FFFFFF;
+    background: #4D394B;
+}
+
+.userList > div {
+    margin: 5px 0;
+}
+
+.messageInput {
+    position: absolute;
+    bottom: 0;
+    right: 5%;
+    left: 15%;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.messageInput input {
+    font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    width: 90%;
+    font-size: 20px;
+}
+
+.messageInput button {
+    font-size: 16px;
+    background-color: #4D394B;
+    border: none;
+    color: #fff;
+    height: 30px;
+    margin-left: 5px;
+}
+
+.messageList {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    left: 15%;
+    padding: 10px;
+    bottom: 60px;
+    border-bottom: 1px solid #ccc;
+    overflow: auto;
+}
+

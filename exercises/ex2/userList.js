@@ -1,8 +1,17 @@
 
 var React = require('react');
 
+var UserItem = React.createClass({
+	propTypes: {
 
-module.exports = React.createClass({
+	},
+
+	render: function () {
+		return null;
+	}
+});
+
+var UserList = React.createClass({
 	propTypes: {
 		users: React.PropTypes.array.isRequired
 	},
@@ -11,3 +20,6 @@ module.exports = React.createClass({
     	return null;
   	}
 });
+
+
+module.exports = UserList;

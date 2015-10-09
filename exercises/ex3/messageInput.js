@@ -2,9 +2,8 @@
 var React = require('react');
 
 var messages = require('../messages.js');
-// messages.addMessage('msg');
 
-module.exports = React.createClass({
+var MessageInput = React.createClass({
 
 	getInitialState: function () {
 	    return {
@@ -12,18 +11,12 @@ module.exports = React.createClass({
 		};
 	},
 
-	clearState: function () {
-
-	},
-
-	inputChange: function () {
-
-	},
-
   	render: function() {
-    	return <div>
-    		<input value={this.state.message} />
-    		<button />
+    	return <div className="messageInput">
+    		<input ref="message" value={this.state.message} />
+    		<button>Send</button>
     	</div>;
   	}
 });
+
+module.exports = MessageInput;

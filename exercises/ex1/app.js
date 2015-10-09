@@ -1,9 +1,9 @@
 
 var React = require('react');
+var ReactDom = require('react-dom');
 
 var TITLE = "Welcome";
 var NAMES = ['Mandy Michael','Dan Barrett', 'Josh Josh Allen', 'Phuong Huynh'];
-
 
 var HelloWorld = React.createClass({
 	render: function() {
@@ -12,4 +12,4 @@ var HelloWorld = React.createClass({
 });
 
 
-React.render(<HelloWorld />, document.body);
+ReactDom.render(<HelloWorld />, document.getElementById('app'));

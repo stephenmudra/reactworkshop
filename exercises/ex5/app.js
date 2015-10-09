@@ -1,8 +1,6 @@
-var React = require('react');
 
-var UserList = require('../ex2/userList.js');
-var MessageInput = require('../ex3/messageInput.js');
-var MessageList = require('../ex4/messageList.js');
+var React = require('react');
+var ReactDom = require('react-dom');
 
 var App = React.createClass({
   	render: function() {
@@ -10,4 +8,4 @@ var App = React.createClass({
   	}
 });
 
-React.render(<App />, document.body);
+ReactDom.render(<App />, document.getElementById('app'));

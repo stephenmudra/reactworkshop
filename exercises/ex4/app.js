@@ -1,5 +1,7 @@
+
 var React = require('react');
+var ReactDom = require('react-dom');
 
 var MessageList = require('./messageList.js');
 
-React.render(<MessageList />, document.body);
+ReactDom.render(<MessageList />, document.getElementById('app'));
